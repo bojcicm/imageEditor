@@ -1,14 +1,22 @@
 import numpy as np
 import cv2
-#from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 
-# !!! BGR Image !!! 
-image = cv2.imread('transfer.png')
+# !!! BGR Image !!!
+IMG_READ = cv2.imread('transfer.png')
 
 #koeficijenti razina boje
-img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+IMG_GRAY = cv2.cvtColor(IMG_READ, cv2.COLOR_BGR2GRAY)
 
-cv2.imshow('bgr image',image)
-cv2.imshow('gray image',img)
+HIST = cv2.calcHist([IMG_READ], [0], None, [256], [0, 256])
+
+plt.hist(IMG_GRAY.ravel(), 256, [0, 256], cumulative=True)
+cv2.imshow('bgr image', IMG_READ)
+cv2.imshow('gray image', IMG_GRAY)
+plt.show()
+
+
+cv2.imshow('bgr image', IMG_READ)
+cv2.imshow('gray image', IMG_GRAY)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
