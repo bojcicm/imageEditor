@@ -7,8 +7,8 @@ Implement various basic image analysis and processing algorithms
 - [x] Transformacija slike u boji u sliku sivih razina
   - Solution : `gray = 0.299⋅R+0.587⋅G+0.114⋅B`
 - [x] Računanje histograma i kumulativnog histograma
-- [ ] Rastezanje histograma
-- [ ] Ujednačavanje histograma
+- [x] Rastezanje histograma
+- [x] Ujednačavanje histograma
 - [ ] Gamma korekcija
 - [ ] Amplitudna segmentacija (korisnik odabire prag temeljem prikazanog histograma slike)
 - [ ] Konvolucija (proizvoljnim filtrom koji zadaje korisnik)

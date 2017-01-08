@@ -2,7 +2,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 # !!! BGR Image !!!
-IMG_READ = cv2.imread('transfer.png')
+IMG_READ = cv2.imread('lena-color.jpg')
 
 #koeficijenti razina boje
 IMG_GRAY = cv2.cvtColor(IMG_READ, cv2.COLOR_BGR2GRAY)
