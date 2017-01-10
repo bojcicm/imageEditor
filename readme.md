@@ -10,9 +10,9 @@ Implement various basic image analysis and processing algorithms
 - [x] Rastezanje histograma
 - [x] Ujednačavanje histograma
 - [x] Gamma korekcija
-- [ ] Amplitudna segmentacija (korisnik odabire prag temeljem prikazanog histograma slike)
-- [ ] Konvolucija (proizvoljnim filtrom koji zadaje korisnik)
-- [ ] Korelacija (proizvoljnim uzorkom koji zadaje korisnik)
+- [x] Amplitudna segmentacija (korisnik odabire prag temeljem prikazanog histograma slike)
+- [x] Konvolucija (proizvoljnim filtrom koji zadaje korisnik)
+- [x] Korelacija (proizvoljnim uzorkom koji zadaje korisnik)
 - [ ] Median filter
 - [ ] Image sharpening
 - [ ] Otkrivanje magnitude i orjentacije rubova na slici
