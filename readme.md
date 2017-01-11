@@ -13,7 +13,7 @@ Implement various basic image analysis and processing algorithms
 - [x] Amplitudna segmentacija (korisnik odabire prag temeljem prikazanog histograma slike)
 - [x] Konvolucija (proizvoljnim filtrom koji zadaje korisnik)
 - [x] Korelacija (proizvoljnim uzorkom koji zadaje korisnik)
-- [ ] Median filter
+- [x] Median filter
 - [ ] Image sharpening
 - [ ] Otkrivanje magnitude i orjentacije rubova na slici
 - [ ] Kombiniranje slika

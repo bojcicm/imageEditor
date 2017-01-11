@@ -15,9 +15,9 @@ bin_width = hist_width/nbins
 def threshold(pixel_val):
     ''' apply threshold to pixel value '''
     if pixel_val > high_tresh:
-        return high_tresh
+        return 255
     elif pixel_val < low_tresh:
-        return low_tresh
+        return 0
     else:
         return pixel_val
 
