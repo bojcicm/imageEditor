@@ -14,10 +14,10 @@ Implement various basic image analysis and processing algorithms
 - [x] Konvolucija (proizvoljnim filtrom koji zadaje korisnik)
 - [x] Korelacija (proizvoljnim uzorkom koji zadaje korisnik)
 - [x] Median filter
-- [ ] Image sharpening
-- [ ] Otkrivanje magnitude i orjentacije rubova na slici
-- [ ] Kombiniranje slika
-- [ ] Morfološke operacije na binarnoj slici (erozija, dilatacija, opening, closing)
+- [x] Image sharpening
+- [x] Otkrivanje magnitude i orjentacije rubova na slici
+- [x] Kombiniranje slika
+- [x] Morfološke operacije na binarnoj slici (erozija, dilatacija, opening, closing)
 
 ### Comments:
 - Images loaded using opencv are in BGR not in RGB

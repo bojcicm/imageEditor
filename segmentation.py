@@ -67,6 +67,6 @@ def run_prog():
     cv2.createTrackbar('high', 'image', high_tresh, 255, update_high_tresh)
     run_treshold()
     cv2.waitKey(0)
-    #cv2.destroyAllWindows()
+    cv2.destroyAllWindows()
 
 run_prog()
