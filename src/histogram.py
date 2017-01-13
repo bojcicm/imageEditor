@@ -2,6 +2,7 @@
 
 import numpy as np
 import cv2
+from matplotlib import pyplot as plt
 
 def im2double(input_img):
     ''' Divide all values by the largest possible value in the datatype '''
@@ -40,7 +41,25 @@ def hist_equ(xarg):
 IMG_READ = cv2.imread('lena-color.jpg')
 IMG_GRAY = cv2.cvtColor(IMG_READ, cv2.COLOR_BGR2GRAY)
 IMG_HIST = hist_stretch(IMG_READ)
+IMG_EQU = cv2.equalizeHist(IMG_GRAY)
+
+plt.figure(1)
+plt.subplot(311)
+plt.hist(IMG_GRAY.flatten(), 256, [0,256], color = 'r')
+plt.xlim([0,256])
+
+plt.figure(1)
+plt.subplot(312)
+plt.hist(IMG_HIST.flatten(), 256, [0,256], color = 'g')
+plt.xlim([0,256])
+
+plt.figure(1)
+plt.subplot(313)
+plt.hist(IMG_EQU.flatten(), 256, [0,256], color = 'g')
+plt.xlim([0,256])
+
 
 cv2.imshow('images1', np.hstack((IMG_GRAY, IMG_HIST, cv2.equalizeHist(IMG_GRAY))))
+plt.show()
 cv2.waitKey(0)
 cv2.destroyAllWindows()
