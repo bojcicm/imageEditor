@@ -11,7 +11,7 @@ Requirements:
 Running:
 - with CMD go to folder `/src`
 - run script with `python example.py`
-- some of scripts need additional path to resources or filters e.g. `python example.py lena.bmp -f low-pass`
+- some of scripts need additional path to resources or filters e.g. `python example.py lena.jpg -f low-pass`
 
 ### Task list for project:
 
