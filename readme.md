@@ -1,6 +1,12 @@
 # Image analysis and processing
 
-Implement various basic image analysis and processing algorithms
+Implement various basic image analysis and processing algorithms.
+Requirements:
+- Python 2.7 + pip
+- install python packages (numpy, matplotlib,..)
+  - `pip install numpy`
+  - `pip install matplotlib`
+  - `pip install opencv-python`
 
 ### Task list for project:
 
